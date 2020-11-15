@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<style>
+    .fondo{ 
+    background-color: #DEB887;
+    color: darkred;
+    font-family: 'Century Gothic';
+    }
+    .btn{
+    
+    display: inline-block;
+    font-weight: 500;
+    color: darkred;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color:rgb(255, 255, 255);
+    border: 1px solid darkred;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+ }
+</style>
+<body>
+    
+    <form class="fondo" align=center>
+        <br><h2>Encuesta de satisfacción</h2><br>
+   
+        <p>
+            ¿Cómo se entero de nuestro servicio?  <br><br>
+            <input type=radio name="p1" id="p1a" class="redes">Redes sociales
+            <input type=radio name="p1" id="p1b" class="redes">Recomendación
+            <input type=radio name="p1" id="p1c" class="redes">Otro
+        </p><br>
+        <p>
+            ¿Que le parece el diseño de la página?  <br><br>
+            <input type=radio name="p2" id="p2a">Muy bueno
+            <input type=radio name="p2" id="p2b">Bueno
+            <input type=radio name="p2" id="p2c">Regular
+            
+        </p><br>
+
+        <p>
+            ¿Batalló para seleccionar su pedido? De ser así, explique por qué.  <br><br>
+            <input type=radio name="p3" id="p3a">Sí
+            <input type=radio name="p3" id="p3b">No
+            <br>
+            <textarea rows="7" cols="30"> </textarea>
+            
+        </p><br>
+
+        <p>
+            ¿Es la primera vez que separa un evento con nosotros?  <br><br>
+            <input type=radio name="p4" id="p4a">Sí
+            <input type=radio name="p4" id="p4b">No
+        
+            
+        </p><br>
+
+        <p>
+            ¿Qué le gustaría agregar a nuestra página o al servicio de PicnicMoment?  <br><br>
+            <textarea rows="7" cols="30" id="texto"> </textarea>
+            
+        </p>
+
+        <input type="submit" value="Enviar" class="btn" onclick="Campos()">
+        <input type="button" value="Borrar" class="btn" onclick="BorrarCampos()">
+
+
+    </form>
+</body>
+<script src="Proyecto.js"></script>
+</html>

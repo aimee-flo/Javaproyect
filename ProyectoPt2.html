@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picnic Moment</title>
+</head>
+<style>
+    .fondo{ 
+    background-color: #DEB887;
+    color: darkred;
+    font-family: 'Century Gothic';
+    }
+    .btn{
+    
+    display: inline-block;
+    font-weight: 500;
+    color: darkred;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color:rgb(255, 255, 255);
+    border: 1px solid darkred;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+ }
+
+  .datos{
+      font-family: 'Century Gothic';
+      color: darkred;
+
+  }
+  a{
+    font-family: 'Century Gothic';
+      color: darkred;
+  }
+</style>
+<body class="fondo">
+<center>
+    <h1>Picnic Moment</h1>
+    <h2>Making special memories</h2><br>
+    <p> Seleccione la fecha de su evento <input type="date" class="datos"></p><br>
+
+    <a target="_blank" href="https://www.meteored.mx/san-nicolas-de-los-garzas/proxima-semana">Revisa el clima ideal para tu picnic</a><br><br>
+
+    <p>Seleccione la hora de inicio deseada <input type="time" class="datos"></p><br>
+
+    <p></p>
+
+    <div>
+    <p>  <br>
+        Selecciona tu picnic <br> <br>
+        <input type="radio" id="bare" name="picnic" onchange="Picnic()"> Bare $500
+        <input type="radio" id="triangle" name="picnic" onchange="Picnic()"> Triangle $700
+
+    </p>
+    <img src="img/bare.png" id="fotopicnic" width="300" height="300" border="3">
+    </div>
+
+    <br><br> <br>
+
+    <div>
+    <p>Extras para tu picnic</p> <br>
+    <form name="extras">
+       <select name="extra" size="1" onmousemove="OpcionFotos()">
+          <option>Selecciona un extra</option><br><br>
+          <option value="img/rosas.jpg">12 Rosas $110</option>
+          <option value="img/vino.jpg">Vino tinto $180</option>
+          <option value="img/proyector.png">Proyector $200</option>
+          <option value="img/brownies.jpg">Brownies $50</option>
+          <option value="img/bocina.jpg">Mini bocina $20</option>
+
+         </select>
+     </form>
+
+     <img src="img/pizza.jpg" name="imagen" width="300" height="300" border="3">
+     <br> <br>
+    </div>
+
+    <div>
+        <p>Si desea agregar más extras, por favor coméntelos aquí:</p>
+        <textarea rows="10" cols="40"></textarea>
+    </div>
+    <br>
+
+
+    <button class="btn" onclick="Imprimir()">
+        Imprimir pedido
+    </button>
+
+     <div><br><br>
+        <h2> Síguenos en nuestras redes sociales</h2>
+        <p><img src="img/insta.png" height="130" width="130" onclick="Insta()">   
+            <img src="img/fb.png" height="130" width="130" onclick="Face()">
+        </p>
+    
+      
+     </div>
+     <br><br>
+
+     <button class="btn" onclick=Formulario()>¡Ayúdanos a mejorar con tu opinión!</button><br><br><br>
+
+     <ins><u><a onclick="Fime()">Visita la página de FIME</a></u></ins><br><br><br>
+
+     
+
+</center>
+</body>
+
+
+
+<script src="Proyecto.js"></script>
+
+</html>
